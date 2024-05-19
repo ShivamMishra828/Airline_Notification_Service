@@ -13,6 +13,7 @@ async function sendEmail(mailFrom, mailTo, subject, text) {
             subject: subject,
             text: text,
         });
+        console.log("Mail Sent Successfully");
         return response;
     } catch (error) {
         throw new AppError(
